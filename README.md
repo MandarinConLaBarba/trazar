@@ -18,11 +18,11 @@ var trazar = require('./lib/generator');
 var sources = [];
 
 sources.push({
-        label : "Some unit tests",
+        label : "Hello World Unit Tests",
         file : "./fileOne.xunit.xml"
     },
     {
-        label : "Some other unit tests",
+        label : "Hello World E2E Tests",
         file : "./fileTwo.xunit.xml"
     });
 
@@ -42,3 +42,7 @@ promise
     });
 
 ```
+
+This will generate something like this:
+
+![](examples/hello-world.png?raw=true)
