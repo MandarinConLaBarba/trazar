@@ -1,7 +1,7 @@
 {
   "name": "trazar",
   "version": "0.0.1",
-  "description": "A chart image generator",
+  "description": "A xunit chart image generator intended for continuous integration purposes.",
   "main": "index.js",
   "repository" : "https://github.com/MandarinConLaBarba/trazar.git",
   "author": "Mandarin Drummond",
