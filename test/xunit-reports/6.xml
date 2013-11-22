@@ -1,0 +1,23 @@
+<testsuite name="Mocha Tests" tests="8" failures="1" errors="1" skipped="0" timestamp="Fri, 22 Nov 2013 18:39:22 GMT" time="0.015">
+<testcase classname="util/chart render in general" name="should create a canvas" time="0"/>
+<testcase classname="util/chart render in general" name="get the context from the canvas" time="0"/>
+<testcase classname="util/chart render in general" name="should get a 2d context from the canvas" time="0"/>
+<testcase classname="util/chart render in general" name="should create an nchart instance" time="0"/>
+<testcase classname="util/chart render in general" name="should call the correct chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should pass the data to the chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should pass the options to the chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should convert the canvas to a buffer" time="NaN" message="expected true to be false"><failure classname="util/chart render in general" name="should convert the canvas to a buffer" time="NaN" message="expected true to be false"><![CDATA[AssertionError: expected true to be false
+    at Object.false (/Users/mandarin/code/trazar/node_modules/should/lib/should.js:324:10)
+    at Context.&lt;anonymous&gt; (/Users/mandarin/code/trazar/test/unit/util/chart.js:128:31)
+    at Test.Runnable.run (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runnable.js:211:32)
+    at Runner.runTest (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:358:10)
+    at /Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:404:12
+    at next (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:284:14)
+    at /Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:293:7
+    at next (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:237:23)
+    at /Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:256:7
+    at Hook.Runnable.run (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runnable.js:213:5)
+    at next (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:249:10)
+    at Object._onImmediate (/Users/mandarin/nvm/v0.10.21/lib/node_modules/mocha/lib/runner.js:261:5)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)]]></failure></testcase>
+</testsuite>

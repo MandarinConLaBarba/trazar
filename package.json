@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "A chart image generator",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "repository" : "https://github.com/MandarinConLaBarba/trazar.git",
   "author": "Mandarin Drummond",
   "license": "MIT",
   "dependencies": {
@@ -13,6 +11,11 @@
     "canvas": "~1.1.2",
     "xml2js": "~0.2.8",
     "bluebird": "~0.9.10-1",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "commander": "~2.0.0"
+  },
+  "devDependencies": {
+    "sinon": "~1.7.3",
+    "should": "~2.1.0"
   }
 }

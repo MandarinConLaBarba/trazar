@@ -1,0 +1,10 @@
+<testsuite name="Mocha Tests" tests="57" failures="0" errors="0" skipped="0" timestamp="Fri, 22 Nov 2013 18:39:31 GMT" time="0.014">
+<testcase classname="util/chart render in general" name="should create a canvas" time="0"/>
+<testcase classname="util/chart render in general" name="get the context from the canvas" time="0"/>
+<testcase classname="util/chart render in general" name="should get a 2d context from the canvas" time="0"/>
+<testcase classname="util/chart render in general" name="should create an nchart instance" time="0"/>
+<testcase classname="util/chart render in general" name="should call the correct chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should pass the data to the chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should pass the options to the chart function" time="0"/>
+<testcase classname="util/chart render in general" name="should convert the canvas to a buffer" time="0"/>
+</testsuite>

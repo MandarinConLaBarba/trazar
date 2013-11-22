@@ -1,4 +1,4 @@
-var generator = require('../lib/generator');
+var trazar = require('../lib/trazar');
 
 var sources = [
     __dirname + "/xunit-samples/project-one.xml",
@@ -10,12 +10,13 @@ var options = {
 
 var outFile = __dirname + '/out/hello-world-line.png';
 
-var promise = generator.from('xunit', sources, options).chart('line', outFile);
+var promise = trazar.from('xunit', sources, options).chart('line', outFile);
 
 promise
     .then(function(result) {
         console.log("Chart generated!");
     })
     .catch(function(err) {
+        console.error("Error generating chart:");
         console.error(err);
     });

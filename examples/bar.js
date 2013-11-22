@@ -1,4 +1,4 @@
-var generator = require('../lib/generator');
+var trazar = require('../lib/trazar');
 
 var sources = [
     __dirname + "/xunit-samples/project-one.xml",
@@ -10,7 +10,7 @@ var options = {
 
 var outFile = __dirname + '/out/hello-world-bar.png';
 
-var promise = generator.from('xunit', sources, options).chart('bar', outFile);
+var promise = trazar.from('xunit', sources, options).chart('bar', outFile);
 
 promise
     .then(function(result) {
