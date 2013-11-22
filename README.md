@@ -15,23 +15,14 @@ An xunit -> chart library..
 
 ```
 var trazar = require('./lib/generator');
-var sources = [];
-
-sources.push({
-        label : "Hello World Unit Tests",
-        file : "./fileOne.xunit.xml"
-    },
-    {
-        label : "Hello World E2E Tests",
-        file : "./fileTwo.xunit.xml"
-    });
+var source = "path/to/some/dir;
 
 var options = {
     successStrokeColor : "#000000"
 };
 
 var outFile = __dirname + '/bar.png';
-var promise = trazar.from('xunit', sources, options).chart('bar', outFile);
+var promise = trazar.from('xunit', source, options).chart('bar', outFile);
 
 promise
     .then(function(result) {
@@ -45,4 +36,6 @@ promise
 
 This will generate something like this:
 
-![](examples/hello-world.png?raw=true)
+![](examples/out/hello-world-line.png?raw=true)
+
+Also
