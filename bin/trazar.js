@@ -7,7 +7,7 @@ program
     .version(require('../package.json').version)
     .description("A chart generator for CI..")
     .usage('<sourceDir> <outputFile> [options]')
-    .option('-f --from <from>', 'which provider/input type to use', 'xunit')
+    .option('-f --from <from>', 'which provider/input type to use (i.e. xunit|json)', 'xunit')
     .option('-x --extension <extension>', 'file extension to look for when processing files')
     .option('-l, --limit', 'number of files in the directory to consider')
     .parse(process.argv);

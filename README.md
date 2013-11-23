@@ -42,6 +42,9 @@ $ npm install --save trazar
 ###Command Line Usage
 
 ```
+$ trazar --help
+```
+```
 $ trazar <path/to/dir/with/xunit/files> chart.png
 ```
 
