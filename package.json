@@ -11,7 +11,7 @@
     "nchart": "~0.1.2",
     "canvas": "1.0.4",
     "xml2js": "~0.2.8",
-    "bluebird": "~0.9.10-1",
+    "bluebird": "~0.10.1-0",
     "underscore": "~1.5.2",
     "commander": "~2.0.0"
   },

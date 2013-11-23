@@ -4,7 +4,11 @@
 Trazar is a utility that converts test output to charts. Some CI servers (like [Buildbot](http://buildbot.net/)) don't
 show test reports w/o customization.
 If you're using a lightweight CI server, trazar can be used to generate test graphs for your projects.
-Currently the only input format supported is xunit, but perhaps more will be added in the future.
+
+Currently supported formats:
+
+* xunit
+* json (from mocha reporter)
 
 ##Installation
 

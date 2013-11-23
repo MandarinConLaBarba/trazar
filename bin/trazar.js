@@ -6,7 +6,9 @@ program.name = "trazar";
 program
     .version(require('../package.json').version)
     .description("A chart generator for CI..")
-    .usage('<sourceDir> <outputFile> ')
+    .usage('<sourceDir> <outputFile> [options]')
+    .option('-f --from <from>', 'which provider/input type to use', 'xunit')
+    .option('-x --extension <extension>', 'file extension to look for when processing files')
     .option('-l, --limit', 'number of files in the directory to consider')
     .parse(process.argv);
 
@@ -16,12 +18,22 @@ if (program.limit) {
     options.limit = program.limit;
 }
 
-var inputType = 'xunit',
+var provider = program.from,
     dir = program.args[0],
     outputFile = program.args[1];
 
+var allowedProviders = ['xunit', 'json'];
+if (allowedProviders.indexOf(provider) === -1) {
+    console.log("Invalid provider.")
+    program.help();
+}
+
+if (provider === 'json' && !program.extension) {
+    options.sourceFilter = '.json';
+}
+
 var promise = trazar
-    .from(inputType, dir, options)
+    .from(provider, dir, options)
     .chart('line', outputFile);
 
 promise
