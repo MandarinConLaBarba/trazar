@@ -30,12 +30,15 @@ Prepares a chart factory
 
 ### Example
 
+ ```
  var promise = trazar
    .from(&#39;json&#39;, &#39;path/to/mocha/json/output&#39;)
    .chart(&#39;line&#39;, &#39;path/to/chart.png&#39;);
+ ```
 
 ### Example with options
 
+ ```
  var promise = trazar
    .from(&#39;json&#39;, &#39;path/to/mocha/json/output&#39;, {
      limit : 5,
@@ -43,6 +46,7 @@ Prepares a chart factory
      pointDotRadius : 4
    })
    .chart(&#39;line&#39;, &#39;path/to/chart.png&#39;);
+ ```
 
 ### Available options
 
