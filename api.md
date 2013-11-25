@@ -55,17 +55,17 @@ Prepares a chart factory
 * limit : Number (number of files to process in a directory)
 * sortBy : String (method for sorting files on a graph. "filename"|"timestamp")
 * sourceFilter : String (a string to match files in a directory for processing, i.e. &#39;.xml&#39; will only process files w/ &#39;.xml&#39; in the name)
-* successFillColor : String (hex|rgba, i.e. &#39;#000000&#39;, &#39;rgba(0,0,0,.1)&#39;
-* successStrokeColor : String (hex|rgba)
-* failureFillColor : String (hex|rgba)
-* failureStrokeColor : String (hex|rgba)
+* successFillColor : String (hex or rgba, i.e. &#39;#000000&#39;, &#39;rgba(0,0,0,.1)&#39;
+* successStrokeColor : String (hex or rgba)
+* failureFillColor : String (hex or rgba)
+* failureStrokeColor : String (hex or rgba)
 
 #### Line Graph Options
 
-* successPointColor : String (hex|rgba)
-* successPointStrokeColor : String (hex|rgba)
-* failurePointColor : String (hex|rgba)
-* failurePointStrokeColor : String (hex|rgba)
+* successPointColor : String (hex or rgba)
+* successPointStrokeColor : String (hex or rgba)
+* failurePointColor : String (hex or rgba)
+* failurePointStrokeColor : String (hex or rgba)
 * any option from http://www.chartjs.org/docs/#lineChart-chartOptions, but note that animation options are not relevant and will have no effect
 
 #### Bar Graph Options
