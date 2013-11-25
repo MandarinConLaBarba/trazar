@@ -2,29 +2,29 @@
 
 <!-- Start lib/trazar.js -->
 
-## ChartFactory(the, a, configuration)
+## ChartFactory(provider, sources, options)
 
 ChartFactory constructor
 
 ### Params: 
 
-* **provider** *the* chart provider to use. i.e. &#39;xunit&#39;, &#39;json&#39;
+* **String** *provider* the chart provider to use. i.e. &#39;xunit&#39;, &#39;json&#39;
 
-* **sources** *a* path to a directory, or an array of file paths
+* **String|Array** *sources* a path to a directory, or an array of file paths
 
-* **options** *configuration* options, extends chart.js options
+* **Object** *options* configuration options, extends chart.js options
 
-## chart(type, path)
+## chart(type, outFile)
 
 Generate the chart image
 
 ### Params: 
 
-* **type** *type* of chart, i.e. &#39;line&#39;, &#39;bar&#39;
+* **String** *type* type of chart, i.e. &#39;line&#39;, &#39;bar&#39;
 
-* **outFile** *path* to output file
+* **String** *outFile* path to output file
 
-## from(the, a, configuration)
+## from(provider, sources, options)
 
 Prepares a chart factory
 
@@ -33,7 +33,7 @@ Prepares a chart factory
  ```
  var promise = trazar
    .from("json", "path/to/mocha/json/output")
-   .chart("line";, "path/to/chart.png");
+   .chart("line", "path/to/chart.png");
  ```
 
 ### Example with options
@@ -74,11 +74,11 @@ Prepares a chart factory
 
 ### Params: 
 
-* **provider** *the* chart provider to use. i.e. &#39;xunit&#39;, &#39;json&#39;
+* **String** *provider* the chart provider to use. i.e. &#39;xunit&#39;, &#39;json&#39;
 
-* **sources** *a* path to a directory, or an array of file paths
+* **String|Array** *sources* a path to a directory, or an array of file paths
 
-* **options** *configuration* options, extends chart.js options
+* **Object** *options* configuration options, extends chart.js options
 
 <!-- End lib/trazar.js -->
 
