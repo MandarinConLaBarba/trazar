@@ -39,7 +39,7 @@ $ npm install --save trazar
 
 ##Examples
 
-**Please see [](api.md) for options and more detailed information.***
+**Please see the [API markdown](api.md) for options and more detailed information.***
 
 ###Command Line Usage
 
