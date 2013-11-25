@@ -33,7 +33,7 @@ Prepares a chart factory
  ```
  var promise = trazar
    .from("json", "path/to/mocha/json/output")
-   .chart("line&#39;, "path/to/chart.png");
+   .chart("line";, "path/to/chart.png");
  ```
 
 ### Example with options
