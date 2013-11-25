@@ -32,20 +32,20 @@ Prepares a chart factory
 
  ```
  var promise = trazar
-   .from(&#39;json&#39;, &#39;path/to/mocha/json/output&#39;)
-   .chart(&#39;line&#39;, &#39;path/to/chart.png&#39;);
+   .from("json", "path/to/mocha/json/output")
+   .chart("line&#39;, "path/to/chart.png");
  ```
 
 ### Example with options
 
  ```
  var promise = trazar
-   .from(&#39;json&#39;, &#39;path/to/mocha/json/output&#39;, {
+   .from("json", "path/to/mocha/json/output", {
      limit : 5,
      scaleLineWidth : 2,
      pointDotRadius : 4
    })
-   .chart(&#39;line&#39;, &#39;path/to/chart.png&#39;);
+   .chart("line", "path/to/chart.png");
  ```
 
 ### Available options
@@ -53,7 +53,7 @@ Prepares a chart factory
 #### Common options
 
 * limit : Number (number of files to process in a directory)
-* sortBy : String (method for sorting files on a graph. &quot;filename&quot;|&quot;timestamp&quot;)
+* sortBy : String (method for sorting files on a graph. "filename"|"timestamp")
 * sourceFilter : String (a string to match files in a directory for processing, i.e. &#39;.xml&#39; will only process files w/ &#39;.xml&#39; in the name)
 * successFillColor : String (hex|rgba, i.e. &#39;#000000&#39;, &#39;rgba(0,0,0,.1)&#39;
 * successStrokeColor : String (hex|rgba)
